@@ -1,2 +1,2 @@
-# learning-js
- Learning JavaScript 
+# JavaScript
+Tracking progress
