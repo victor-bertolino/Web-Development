@@ -1,2 +1,2 @@
-# JavaScript
+# Web Development
 Tracking progress
