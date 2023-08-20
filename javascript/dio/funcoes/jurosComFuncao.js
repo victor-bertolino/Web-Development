@@ -1,28 +1,19 @@
-function aplicarDesconto(desconto, valor) {
-return (valor -( valor * desconto));
+function aplicarDesconto(valor, desconto) {
+    return valor - (valor * (desconto / 100))
 }
 
-const precoProduto = 10;
-const formaPagamento = "Débito"
-const parcelas = 2
-
-if (formaPagamento === "Débito" && parcelas === 1) {
-const precoFinal = precoProduto * 0.90
-console.log("O valor a pagar é R$" + precoFinal.toFixed(2))
-} 
-else if (formaPagamento === "Dinheiro" && parcelas === 1) {
-    const precoFinal = precoProduto * 0.85
-    console.log("O valor a pagar é R$" + precoFinal.toFixed(2))
-} 
-else if (formaPagamento === "PIX" && parcelas === 1) {
-    const precoFinal = precoProduto * 0.85
-    console.log("O valor a pagar é R$" + precoFinal.toFixed(2))
-} 
-else if (parcelas === 2) {
-    const precoFinal = precoProduto
-    console.log("O valor a pagar é R$" + precoFinal.toFixed(2))
-} 
-else {
-    const precoFinal = precoProduto * 1.10
-    console.log("O valor a pagar é R$" + precoFinal.toFixed(2))
+function aplicarJuros(valor, juros) {
+    return valor + (valor * (juros / 100))
 }
+
+let preco = 7;
+let formaPagamento = 1;
+
+    if (formaPagamento === 1) {
+        console.log(aplicarDesconto(7,10))
+    } else if (formaPagamento === 2) {
+        console.log(preco)
+    } else {
+        console.log(aplicarJuros(7,10))
+    }
+
