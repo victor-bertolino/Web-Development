@@ -1,4 +1,6 @@
-function incrementarJuros(valor, percentualDeJuros) {
-    const incremento = (percentualDeJuros / 100) * valor;
-    return valor + incremento;
-}
+const dev = {
+    nome: 'Renan',
+    linguagemPreferida: 'JavaScript'
+};
+
+console.log(dev.linguagemPreferida);
