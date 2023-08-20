@@ -1,5 +1,4 @@
-let nomeDoAluno = 'Renan Johannsen de Paula';
-console.log(nomeDoAluno);
-
-nomeDoAluno = 'Vitor Johansen Guerra';
-console.log(nomeDoAluno);
+function incrementarJuros(valor, percentualDeJuros) {
+    const incremento = (percentualDeJuros / 100) * valor;
+    return valor + incremento;
+}
