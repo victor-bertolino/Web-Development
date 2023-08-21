@@ -1,6 +1,10 @@
-const dev = {
-    nome: 'Renan',
-    linguagemPreferida: 'JavaScript'
-};
+const numerosPares = [];
 
-console.log(dev.linguagemPreferida);
+    for (let i = 0; i < 10; i++) {
+        const numeroPar = i % 2 === 0;
+        if (numeroPar) {
+            numerosPares.push(i);
+        }
+    }
+
+    console.log(numerosPares);
